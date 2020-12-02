@@ -1,31 +1,54 @@
 """
-STRUCTURED ENGLISH
+PSEUDOCODE
 
-Create a calculator to simplify some common calculations used in statistics
+main:
+    1: Normal Approximation
+    2: Z-Score
+    3: Function Dictionary
+    4: Exit (exit())
 
-Provide user with 'menu' of options in the calculator
-Switch to different functions based off of user input
+normalApproximation:
+    n = input
+    p = input
 
-Normal Approximation:
-Take in values for n & p (these are values that are given/found when working out these problems)
-check if p > 1, if true throw error
-From p, find the value of q (1 - p)
-Calculate and print to user (np, sqrt(npq))
-Ask user if they want to calculate another or return to main menu
+    if p > 1:
+        error = p should not be larger than 1
+    
+    q - 1
+    np = n * p
+    npq = sqrt(n * p * q)
+    print(Normal approximation is N(np, npq))
 
-Z-score calculator:
-Take in values for x, u, o (these are values that are given/found when working out these problems)
-Check if o < 0, if true throw error
-Calculate and return z = (x-u)/0
-Ask user if they want to calculate another or return to main menu
+    continue:
+        normalApproximation()
+    else:
+        main()
 
-Function Dictionary:
-Initialize a dictionary that defines the functions in the calculator
-Iterate through the keys and print values to user when function is called
-Return to main menu
+zScore:
+    x = input
+    u = input
+    o = input
 
-Exit:
-Exit() from program
+    if o < 0:
+        error = o should not be negative
+    
+    z = (x-u)/o
+    print(z)
 
-END STRUCTURED ENGLISH
+    continue:
+        zScore()
+    else:
+        main()
+
+functionDictionary:
+    functionDefinitions = {
+        1: Normal approximation is ...
+        2: Z-score is ...
+    }
+
+    main()
+
+main()
+
+END PSEUDOCODE
 """
